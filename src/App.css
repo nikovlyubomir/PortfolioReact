@@ -1,22 +1,170 @@
-.App {
-  text-align: center;
+body {
+    height: 100%;
+    overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+    font-family: 'Cabin', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 100;
 }
 
-.App-link {
-  color: #09d3ac;
+.header-color {
+    background: #1D2B64;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+    background: -webkit-linear-gradient(to right, #F8CDDA, #121c46);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8CDDA, #121c46);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+    background: #1D2B64;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8CDDA, #121c46);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#side-header-color {
+    background: #F4f4f4;
+    border-right: 4px solid palevioletred;
+}
+
+.avatar-image {
+    height: 300px;
+    padding-top: 90px;
+    padding-right: 3px;
+}
+
+.bannerText {
+    background-color: black;
+    opacity: 0.6;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.bannerText h1 {
+    color: white;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+.bannerText hr {
+    border-top: dotted 5px white;
+    width: 60%;
+    margin: auto;
+}
+
+.bannerText p {
+    color: white;
+    font-size: 19px;
+    padding: 1rem;
+}
+
+.bannerText .icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    margin: 0 30rem;
+    padding-bottom: 2rem;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-body {
+    background: linear-gradient(to right, #F8CDDA, #121c46);
+    height: 100%;
+}
+
+.contact-body {
+    margin: auto;
+    position: fixed;
+    background: linear-gradient(to right, #F8CDDA, #121c46);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.contact-grid {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+    font-family: 'Oxygine', sans-serif;
+    font-weight: bold;
+}
+
+.contact-grid hr {
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-list i {
+    font-size: 66px;
+    padding-left: 100px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.contact-list .icon3 {
+    font-size: 78px;
+}
+
+.contact-list .icon1 {
+    font-size: 78px;
+}
+
+.resume-layout {
+    background: linear-gradient(to right, #F8CDDA, #121c46);
+    height: 88.7vh;
+}
+
+.resume-right-col {
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow-y: scroll;
+    height: 84vh;
+    background: transparent;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    opacity: 0.7;
+    border-left: 4px dotted black;
 }
